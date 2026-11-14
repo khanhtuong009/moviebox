@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14161F">
+<title>MovieBox</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+<header id="top">
+  <a class="logo" href="#/">MovieBox</a>
+  <form id="sf"><input id="q" type="search" placeholder="Tìm phim, phim bộ" autocomplete="off"></form>
+  <a class="gear" href="#/settings" aria-label="Cài đặt">⚙</a>
+</header>
+<main id="app"></main>
+<script src="app.js"></script>
+<script>if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js").catch(function(){});</script>
+</body>
+</html>
